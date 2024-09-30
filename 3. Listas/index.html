@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+
+      ol, ul, dl {
+        margin-left: 20px;
+      }
+
+      ol {
+        margin-bottom: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      ul li {
+        margin-left: 20px;
+      }
+
+      ol > li {
+        margin-top: 15px;
+      }
+    </style>
+
+</head>
+
+<body>
+
+
+    <ol type="I">
+      <li>
+        Aviones de Aviación General
+        <ol type="a">
+          <li>Aeronaves Monomotor</li>
+          <li>Aeronaves Bimotor</li>
+        </ol>
+      </li>
+
+      <li>
+        Aviación Comercial
+        <ul>
+          <li>Motor Doble</li>
+          <li>Motor Triple</li>
+        </ul>
+      </li>
+    </ol>
+
+    <ol>
+      <li style="list-style-type: square;">
+        Categoría A
+        <ol>
+          <li style="list-style-type: circle;">Subcategoría B</li>
+          <ul>
+            <li style="list-style-type: square;">Elemento C</li>
+            <li style="list-style-type: square;">Elemento D</li>
+          </ul>
+        </ol>
+      </li>
+
+      <li>
+        Categoría E
+        <ul>
+          <li>Motor Doble</li>
+          <li>Motor Triple</li>
+        </ul>
+      </li>
+    </ol>
+
+  </body>
+
+  </html>
