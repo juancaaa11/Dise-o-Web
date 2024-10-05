@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Acceso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>INFORMACIÓN DE ACCESO A</h1>
+    <h2>LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+    
+    <form>
+        <!-- Sección de Datos Personales -->
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos">
+            
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni">
+            
+            <label for="lugarNacimiento">Lugar de Nacimiento:</label>
+            <input type="text" id="lugarNacimiento" name="lugarNacimiento">
+            
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia">
+                <option value="caceres">Cáceres</option>
+                <!-- Otras provincias -->
+            </select>
+            
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion">
+            
+            <label for="codigoPostal">Código Postal:</label>
+            <input type="text" id="codigoPostal" name="codigoPostal">
+        </fieldset>
+        
+        <!-- Sección de Forma de Acceso -->
+        <fieldset>
+            <legend>Forma de Acceso</legend>
+            <label><input type="radio" name="acceso" value="directo"> Directo</label>
+            <label><input type="radio" name="acceso" value="pruebaLibre"> Prueba Libre</label>
+            
+            <label for="bachillerato">Bachillerato:</label>
+            <input type="text" id="bachillerato" name="bachillerato">
+            
+            <label for="universidad">Universidad:</label>
+            <input type="text" id="universidad" name="universidad">
+            
+            <label for="gradoMedio">Grado Medio:</label>
+            <input type="text" id="gradoMedio" name="gradoMedio">
+            
+            <label for="otros">Otros (especifique):</label>
+            <input type="text" id="otros" name="otros">
+        </fieldset>
+        
+        <!-- Sección de Documentos Adjuntos -->
+        <fieldset>
+            <legend>Documentos Adjuntos</legend>
+            <label><input type="checkbox" name="documentos" value="dni"> Fotocopia DNI</label>
+            <label><input type="checkbox" name="documentos" value="certificado"> Certificado Académico</label>
+            
+            <label for="otrosDocs">Otros documentos (especifique):</label>
+            <input type="text" id="otrosDocs" name="otrosDocs">
+        </fieldset>
+        
+        <!-- Botón de Enviar -->
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+</body>
+</html>
