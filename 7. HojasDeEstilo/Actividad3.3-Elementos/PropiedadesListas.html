@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de Estilo de Listas en CSS</title>
+    <style>
+        /* Estilo de los marcadores de la lista (disc, circle, square, decimal, etc.) */
+        .list-style-type-example {
+            list-style-type: square; /* Aplica un marcador de tipo cuadrado a los elementos de la lista */
+        }
+
+        /* Imagen como marcador de lista */
+        .list-style-image-example {
+            list-style-image: url('https://via.placeholder.com/15'); /* Aplica una imagen como marcador de lista */
+        }
+
+        /* Posición del marcador dentro o fuera del texto */
+        .list-style-position-example {
+            list-style-position: inside; /* Coloca el marcador dentro del bloque de texto del ítem de la lista */
+        }
+
+        /* Combinación de varias propiedades de lista */
+        .list-style-example {
+            list-style: lower-roman inside url('https://via.placeholder.com/15'); /* Combina un marcador en números romanos en minúsculas, con una imagen y dentro del texto */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ejemplo de list-style-type: estilo de los marcadores -->
+    <ul class="list-style-type-example">
+        <li>Elemento de lista con marcador cuadrado</li>
+        <li>Otro elemento de lista con marcador cuadrado</li>
+    </ul>
+
+    <!-- Ejemplo de list-style-image: imagen como marcador -->
+    <ul class="list-style-image-example">
+        <li>Elemento de lista con marcador de imagen</li>
+        <li>Otro elemento de lista con marcador de imagen</li>
+    </ul>
+
+    <!-- Ejemplo de list-style-position: posición del marcador -->
+    <ul class="list-style-position-example">
+        <li>El marcador de esta lista está dentro del bloque de texto</li>
+        <li>Otro elemento con el marcador dentro del texto</li>
+    </ul>
+
+    <!-- Ejemplo de list-style: combinación de varias propiedades -->
+    <ul class="list-style-example">
+        <li>Elemento con marcador de imagen, números romanos y dentro del texto</li>
+        <li>Otro elemento con el mismo estilo combinado</li>
+    </ul>
+
+</body>
+</html>
+
+<!--@author: juancaaa11-->

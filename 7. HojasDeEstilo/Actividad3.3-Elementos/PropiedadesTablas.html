@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de Tablas en CSS</title>
+    <style>
+        /* Posición del título de la tabla (caption) */
+        .caption-side-example {
+            caption-side: bottom; /* Coloca el título de la tabla en la parte inferior */
+        }
+
+        /* Diseño de las celdas, filas y columnas */
+        .table-layout-example {
+            table-layout: fixed; /* Las celdas tendrán un ancho fijo, no se ajustarán automáticamente al contenido */
+        }
+
+        /* Control del modelo de los bordes */
+        .border-collapse-example {
+            border-collapse: collapse; /* Fusiona los bordes de las celdas en un único borde */
+        }
+
+        /* Espaciado entre los bordes de las celdas adyacentes */
+        .border-spacing-example {
+            border-spacing: 10px; /* Establece un espaciado de 10px entre los bordes de las celdas */
+        }
+
+        /* Visualización de las celdas vacías */
+        .empty-cells-example {
+            empty-cells: hide; /* Las celdas vacías no se mostrarán */
+        }
+
+        /* Ejemplo combinado */
+        .table-combined {
+            table-layout: auto;
+            border-collapse: separate;
+            border-spacing: 5px;
+            empty-cells: show;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ejemplo de caption-side: posición del título -->
+    <table class="caption-side-example" border="1">
+        <caption>Este es el título de la tabla</caption>
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+        </tr>
+        <tr>
+            <td>Celda 3</td>
+            <td>Celda 4</td>
+        </tr>
+    </table>
+
+    <!-- Ejemplo de table-layout: formato de las celdas -->
+    <table class="table-layout-example" border="1" style="width: 200px;">
+        <tr>
+            <td>Celda con texto largo que no se ajusta</td>
+            <td>Celda 2</td>
+        </tr>
+    </table>
+
+    <!-- Ejemplo de border-collapse: modelo de los bordes -->
+    <table class="border-collapse-example" border="1">
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+        </tr>
+        <tr>
+            <td>Celda 3</td>
+            <td>Celda 4</td>
+        </tr>
+    </table>
+
+    <!-- Ejemplo de border-spacing: espaciado entre bordes -->
+    <table class="border-spacing-example" border="1">
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+        </tr>
+        <tr>
+            <td>Celda 3</td>
+            <td>Celda 4</td>
+        </tr>
+    </table>
+
+    <!-- Ejemplo de empty-cells: celdas vacías -->
+    <table class="empty-cells-example" border="1">
+        <tr>
+            <td>Celda 1</td>
+            <td></td> <!-- Celda vacía que no se mostrará -->
+        </tr>
+        <tr>
+            <td>Celda 3</td>
+            <td></td> <!-- Celda vacía que no se mostrará -->
+        </tr>
+    </table>
+
+    <!-- Ejemplo combinado de varias propiedades -->
+    <table class="table-combined" border="1">
+        <caption>Título en la parte superior</caption>
+        <tr>
+            <td>Celda 1</td>
+            <td></td> <!-- Celda vacía que sí se mostrará -->
+        </tr>
+        <tr>
+            <td>Celda 3</td>
+            <td>Celda 4</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+<!-- @author: juancaaa11-->
