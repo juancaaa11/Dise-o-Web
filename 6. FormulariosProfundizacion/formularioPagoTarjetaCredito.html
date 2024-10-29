@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago con Tarjeta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario de Pago</h1>
+    <form action="procesar.php" method="POST">
+        <label for="numero_tarjeta">Número de Tarjeta:</label>
+        <input type="text" id="numero_tarjeta" name="numero_tarjeta" pattern="[0-9]{16}" required>
+
+        <label for="titular">Nombre del Titular:</label>
+        <input type="text" id="titular" name="titular" required>
+
+        <label for="mes">Mes de Caducidad:</label>
+        <select id="mes" name="mes" required>
+            <option value="" disabled selected>Mes</option>
+            ${Array.from({ length: 12 }, (_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('')}
+        </select>
+
+        <label for="anio">Año de Caducidad:</label>
+        <select id="anio" name="anio" required>
+            <option value="" disabled selected>Año</option>
+            ${Array.from({ length: 5 }, (_, i) => `<option value="${2024 + i}">${2024 + i}</option>`).join('')}
+        </select>
+
+        <label for="cvv">CVV:</label>
+        <input type="password" id="cvv" name="cvv" pattern="[0-9]{3}" required>
+
+        <label for="notas">Notas:</label>
+        <textarea id="notas" name="notas" cols="60" rows="2"></textarea>
+
+        <input type="checkbox" id="guardar" name="guardar">
+        <label for="guardar">Guardar datos para otras compras</label>
+
+        <button type="submit">Pagar</button>
+        <button type="button" onclick="window.location.href='cancelar.php'">Cancelar</button>
+    </form>
+</body>
+</html>

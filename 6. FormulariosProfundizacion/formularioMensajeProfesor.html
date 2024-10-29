@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje al Profesor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mensaje al Profesor</h1>
+    <form action="procesar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="turno">Turno:</label>
+        <select id="turno" name="turno">
+            <option value="mañana">Mañana</option>
+            <option value="tarde">Tarde</option>
+        </select>
+
+        <label for="materia">Materia:</label>
+        <select id="materia" name="materia">
+            <option value="fisica">Física</option>
+            <option value="quimica">Química</option>
+            <option value="biologia">Biología</option>
+            <option value="matematicas">Matemáticas</option>
+        </select>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" cols="30" rows="4"></textarea>
+
+        <input type="hidden" name="origen" value="Academia">
+
+        <input type="submit" value="Enviar Mensaje">
+    </form>
+</body>
+</html>
