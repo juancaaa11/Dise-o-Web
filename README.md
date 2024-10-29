@@ -1,4 +1,4 @@
-# 🌐 Diseño Web - Proyecto del Instituto
+# 🌐 Diseño Web - IES AGORA
 
 Bienvenido al repositorio de **Diseño Web** de IES Agora! Este proyecto está dedicado a mostrar y documentar nuestro aprendizaje sobre tecnologías web modernas, HTML, CSS, y JavaScript, y cómo crear páginas web interactivas y funcionales.
 
