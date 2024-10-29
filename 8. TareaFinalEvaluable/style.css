@@ -1,0 +1,138 @@
+/* Fuentes */
+
+@font-face {
+    font-family: 'TTBlackWards'; 
+    src: url('_fonts/TT\ Backwards\ Sans\ Trial\ Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'TTCommonsExtraLight'; 
+    src: url('_fonts/TT\ Commons\ ExtraLight.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'TTMoons'; 
+    src: url('_fonts/TT\ Moons\ Trial\ Regular.otf') format('opentype');
+}
+
+/* Estilos generales */
+
+body, html {
+    margin: 0;
+    padding: 0;  
+    scroll-snap-type: y mandatory;
+    background-color: #E6D7AC; /* Activa scroll-snap en el eje Y */
+    font-family: TTCommonsExtraLight;
+
+  }
+  
+  hr {
+    border: none;      /* Quita el estilo de borde por defecto */
+    border-top: 1px solid #0C0C0A;  /* Agrega una línea superior negra (ajusta el grosor si deseas) */
+    margin: 0.7em 0;     /* Margen superior e inferior para espaciado */
+  }
+  
+  
+  .pagina {
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */  
+    color: #473c38;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4%;
+  }
+
+  .titulo{
+
+    font-family: TTMoons;
+    color: #473c38;
+    font-size: 28px;
+  }
+
+  .subtitulos{
+
+    font-family: TTBlackWards;
+    color: #473c38;
+    font-size: 70px;
+   
+
+  }
+
+  .anuncio{
+
+    display: flex;
+    gap: 8%;
+
+  }
+
+  .buttonext{
+
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  }
+
+  .parrafo1{
+
+    font-size: 24px;
+    width: 44%;
+    color: black;
+  }
+  .image{
+
+    display: flex;
+    gap:8%;
+  }
+
+  /*Identificadores*/
+  
+  #inicio {
+    
+    
+  }
+
+   #subtitulos2{
+
+    width: 32%;
+
+  }
+
+  #apicultor{
+
+
+    width: 32%;
+  
+    
+
+  }
+
+  #miel{
+
+    width: 20%;
+    height: 10%;
+   
+  }
+  
+  #abejaInicio{
+
+    width: 48%;
+    padding-left: 2%;
+
+  }
+
+  #logo{
+   
+    width: 6%;
+    position: absolute;
+    top: 0%;
+    right: 0%; /* Alinear a la derecha */
+    
+  }
+  #seccion2 {
+  
+  }
+  
+  #seccion3 {
+    
+  }
+  
