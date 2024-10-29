@@ -66,9 +66,7 @@ body, html {
 
   .buttonext{
 
-  display: inline-flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+ 
 
   }
 
@@ -100,16 +98,15 @@ body, html {
   #apicultor{
 
 
-    width: 32%;
-  
-    
+    width: 567px;
+    height: 215px;
 
   }
 
   #miel{
 
-    width: 20%;
-    height: 10%;
+    width: 567px;
+    height: 280px;
    
   }
   
