@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Clases</title>
+
+    <style>
+        /* Estilo general de la tabla */
+        table {
+            text-align: center;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        /* Pseudoselectores para dar color de fondo verde a las celdas de horas */
+        td.hora {
+            color: white;
+            background-color: green;
+        }
+
+        /* Pseudoselectores para las celdas de recreo con fondo amarillo */
+        td.recreo {
+            background-color: yellow;
+        }
+
+        /* Cambiar el estado de los enlaces: no subrayado, rojo si visitado, verde si no visitado */
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        /* Hacer que al pasar el raton sobre la columna del viernes se duplique el tamaño de letra */
+        td.viernes:hover {
+            font-size: 2em;
+        }
+
+        /* Pseudo-elementos para hacer que la primera letra de los días sea el doble de tamaño */
+        th::first-letter {
+            font-size: 2em;
+        }
+
+        .titulo{
+
+            color: green;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="titulo">HORARIO DE CLASE CURSO 2018-2019</h1>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>HORAS</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th class="viernes">Viernes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="hora">8:00</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+                <td>Inglés</td>
+                <td>Ciencias</td>
+                <td class="viernes">Lengua</td>
+            </tr>
+            <tr>
+                <td class="hora">9:00</td>
+                <td>Matemáticas</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td class="viernes">Historia</td>
+            </tr>
+            <tr>
+                <td class="hora">10:00</td>
+                <td colspan="5" class="recreo">RECREO</td>
+            </tr>
+            <tr>
+                <td class="hora">10:30</td>
+                <td>Inglés</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+                <td class="viernes">Historia</td>
+            </tr>
+            <tr>
+                <td class="hora">11:30</td>
+                <td>Historia</td>
+                <td>Lengua</td>
+                <td>Inglés</td>
+                <td>Matemáticas</td>
+                <td class="viernes">Inglés</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <form>
+        <label for="email">Email*: </label>
+        <input type="email" id="email" name="email" placeholder="Inserte email del destinatario">
+        <br><br>
+        <button type="submit">Enviar Horario</button>
+    </form>
+
+</body>
+
+</html>
+
+<!--@author: juancaaa11-->
