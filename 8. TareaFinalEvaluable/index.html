@@ -17,7 +17,7 @@
   <section class="pagina" id="inicio">
 
     <img src="_image/AbejaZangano.png" alt="logo" id="logo">
-    <h2 class="titulo">ABEJAS Y ZANGANOS</h2>
+    <h2 class="titulo">ABEJAS Y ZÁNGANOS</h2>
 
     <hr><br><br>
 
@@ -28,7 +28,7 @@
 
     <div class="button">
 
-       <a href="https://amzn.eu/d/b6GnR9Z"> <button class="buttonext">SIGUIENTE</button></a>
+       <a href="https://amzn.eu/d/2QzKDS0"> <button class="buttonext">SIGUIENTE</button></a>
 
     </div>
     
@@ -60,33 +60,9 @@
 
   </section>
 
-  <!-- Script para desvanecimiento de la web -->
+  <!--Script para efecto desvanecimiento de la web-->
 
-  <script>
-    
-    // Seleccionar todas las secciones con la clase .pagina
-    const secciones = document.querySelectorAll('.pagina');
-
-    // Funcion para verificar si una seccion esta vista
-    function verificarVisibilidad() {
-        secciones.forEach(seccion => {
-            const rect = seccion.getBoundingClientRect();
-            if (rect.top < window.innerHeight && rect.bottom >= 0) {
-                seccion.classList.add('visible'); // Añadir clase visible si esta en vista
-            } else {
-                seccion.classList.remove('visible'); // Quitar clase si no esta en vista
-            }
-        });
-    }
-
-    // Ejecutar cuando se haga scroll
-    window.addEventListener('scroll', verificarVisibilidad);
-
-    // Ejecutar una vez al cargar la pagina
-    verificarVisibilidad();
-  
-  </script>
-
+  <script src="script.js"></script>
 
 </body>
 
