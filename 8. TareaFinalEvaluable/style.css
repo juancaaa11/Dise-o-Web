@@ -97,6 +97,7 @@ body, html {
     letter-spacing: 3px;
     border: 1.7px solid black;
     transition: background-color 0.7s;
+    cursor: pointer;
 
   }
 
