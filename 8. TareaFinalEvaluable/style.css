@@ -39,7 +39,13 @@ body, html {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 4%;
+    opacity:0%;
+    transition: opacity 1.2s ease-in-out;
   }
+
+  .pagina.visible {
+    opacity: 1; /* Se vuelve visible al hacer scroll */
+}
 
   .titulo{
 
@@ -53,7 +59,15 @@ body, html {
     font-family: TTBlackWards;
     color: #473c38;
     font-size: 70px;
-   
+    width: 25%;
+
+  }
+
+  .button{
+
+    position: absolute;
+    top:65%;
+    left: 56.7%;
 
   }
 
@@ -62,12 +76,32 @@ body, html {
     display: flex;
     gap: 8%;
 
+
+  }
+
+  .anuncio2{
+
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    
   }
 
   .buttonext{
 
- 
+    background-color:#E6D7AC ;
+    width: 230px;
+    height: 65px;
+    font-family: TTCommonsExtraLight;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: 1.7px solid black;
+    transition: background-color 0.7s;
 
+  }
+
+  .buttonext:hover {
+    background-color: #ccbf9a; /* Color del botón al pasar el cursor */
   }
 
   .parrafo1{
@@ -100,6 +134,7 @@ body, html {
 
     width: 567px;
     height: 215px;
+    display: block;
 
   }
 
@@ -107,6 +142,8 @@ body, html {
 
     width: 567px;
     height: 280px;
+    display: block;
+    margin-top: 20px;
    
   }
   

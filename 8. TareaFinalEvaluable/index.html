@@ -25,14 +25,16 @@
 
         <img src="_image/abejaInicio.jpg" alt="Abeja" id="abejaInicio">
         <p class="subtitulos"> La mejor miel, de alta montaña.</p>
+    
+    </div> 
 
     <div class="button">
 
-        <button class="buttonext">SIGUIENTE</button>
+       <a href="https://amzn.eu/d/b6GnR9Z"> <button class="buttonext">SIGUIENTE</button></a>
 
     </div>
     
-    </div>
+    
 
   </section>
 
@@ -43,7 +45,7 @@
     <p class="subtitulos" id="subtitulos2">¿Por qué es ​tan importante ​la miel?</p>
     <p class="parrafo1">La miel es importante no solo por su sabor y versatilidad en ​la alimentación, sino también por sus propiedades ​medicinales y beneficios para la salud. Es un alimento ​natural rico en antioxidantes, vitaminas y minerales, lo que ​la convierte en un excelente refuerzo inmunológico.</p>
 
-    <div class="anuncio">
+    <div class="anuncio2">
         
     <img src="_image/apicultor.jpg" class="image" alt="apicultor" id="apicultor">
     <img src="_image/Miel.jpg" class="image" alt="Miel" id="miel">
@@ -58,6 +60,33 @@
     <p>Contenido de la tercera sección.</p>
 
   </section>
+
+
+
+  <script>
+    // Seleccionar todas las secciones con la clase .pagina
+    const secciones = document.querySelectorAll('.pagina');
+
+    // Funcion para verificar si una seccion esta vista
+    function verificarVisibilidad() {
+        secciones.forEach(seccion => {
+            const rect = seccion.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                seccion.classList.add('visible'); // Añadir clase visible si esta en vista
+            } else {
+                seccion.classList.remove('visible'); // Quitar clase si no esta en vista
+            }
+        });
+    }
+
+    // Ejecutar cuando se haga scroll
+    window.addEventListener('scroll', verificarVisibilidad);
+
+    // Ejecutar una vez al cargar la pagina
+    verificarVisibilidad();
+</script>
+
+
 </body>
 
 </html>
