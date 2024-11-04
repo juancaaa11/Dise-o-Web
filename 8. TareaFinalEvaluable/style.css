@@ -82,8 +82,8 @@ body, html {
   .anuncio2{
 
     position: absolute;
-    top: 125%;
-    left: 50%;
+    top: 123%;
+    left: 55%;
     
   }
 
@@ -118,10 +118,6 @@ body, html {
 
   /*Identificadores*/
   
-  #inicio {
-    
-    
-  }
 
    #subtitulos2{
 
@@ -162,11 +158,5 @@ body, html {
     right: 0%; /* Alinear a la derecha */
     
   }
-  #seccion2 {
-  
-  }
-  
-  #seccion3 {
-    
-  }
+ 
   
