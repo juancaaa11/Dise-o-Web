@@ -29,7 +29,7 @@ body, html {
   hr {
     border: none;      /* Quita el estilo de borde por defecto */
     border-top: 1px solid #0C0C0A;  /* Agrega una línea superior negra (ajusta el grosor si deseas) */
-    margin: 0.7em 0;     /* Margen superior e inferior para espaciado */
+    margin: 0.5em 0;     /* Margen superior e inferior para espaciado */
   }
   
   
@@ -63,13 +63,7 @@ body, html {
 
   }
 
-  .button{
-
-    position: absolute;
-    top:65%;
-    left: 56.7%;
-
-  }
+  
 
   .anuncio{
 
@@ -98,6 +92,9 @@ body, html {
     border: 1.7px solid black;
     transition: background-color 0.7s;
     cursor: pointer;
+    position: absolute;
+    top:65%;
+    left: 56.7%;
 
   }
 
@@ -115,6 +112,15 @@ body, html {
 
     display: flex;
     gap:8%;
+  }
+
+  .entrantes{
+
+    font-size: 70px;
+    font-family: TTBlackWards;
+    color: #473c38;
+    
+
   }
 
   /*Identificadores*/
