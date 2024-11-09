@@ -156,7 +156,7 @@ body, html {
   .producto1 img,
   .producto2 img,
   .producto3 img {
-    width: 370px;
+    width: 340px;
 }
 
   .producto1 p:nth-of-type(2),
@@ -245,7 +245,7 @@ body, html {
 
   #opinioncliente{
 
-    width: 400px;
+    width: 67%;
 
   }
  
