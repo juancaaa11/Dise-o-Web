@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: 'TTBlackWards'; 
-    src: url('_fonts/TT\ Backwards\ Sans\ Trial\ Regular.otf') format('opentype');
+    src: url('fonts/TT\ Backwards\ Sans\ Trial\ Regular.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'TTCommonsExtraLight'; 
-    src: url('_fonts/TT\ Commons\ ExtraLight.otf') format('opentype');
+    src: url('fonts/TT\ Commons\ ExtraLight.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'TTMoons'; 
-    src: url('_fonts/TT\ Moons\ Trial\ Regular.otf') format('opentype');
+    src: url('fonts/TT\ Moons\ Trial\ Regular.otf') format('opentype');
 }
 
 /* Estilos generales */
@@ -146,7 +146,37 @@ body, html {
     object-fit: cover;
   }
 
+  .titular{
 
+    display: flex;
+    
+
+  }
+
+  .nav{
+
+    margin-top: 0.2%;
+    margin-left: 10%;
+    background-color: unset;
+    border-style: none;
+    cursor: pointer;
+    
+
+
+  }
+
+  .nav :hover{
+
+    color: #b88d01;
+  }
+
+
+  .quiensomos{
+
+    font-family: TTCommonsExtraLight;
+    font-size: 18px;
+    color: #473c38;
+  }
 
   .numeroproducto{
 
@@ -237,8 +267,9 @@ body, html {
  
  
 .footer {
+
   position: static;
-  margin-top: 1%;
+  margin-top: 8%;
   bottom: 0;
   width: 100%;
   background-color: #333; 
@@ -318,5 +349,7 @@ body, html {
     padding-right: 30px;
 
   }
+
+
 
   
