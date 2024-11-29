@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.nivel {
+    margin-bottom: 20px;
+}
+
+.box {
+    background: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    background-color: #2980b9;
+}
+
+.box.activo {
+    background-color: #2980b9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.box p {
+    margin: 10px 0 0;
+}
+
+/* Ajuste para las tareas desplegables */
+.tareas {
+    list-style: none;
+    padding: 10px 0; /* Espaciado interno para la lista */
+    margin: 10px 0;
+    display: none; /* Ocultas por defecto */
+    max-height: 300px; /* Altura máxima para evitar desbordamiento */
+    overflow-y: auto; /* Barra de desplazamiento si es necesario */
+    border: 1px solid #bdc3c7; /* Borde para claridad visual */
+    background-color: #fff; /* Fondo blanco para contraste */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo de los elementos de la lista */
+.tareas li {
+    margin: 8px 0; /* Espaciado entre elementos */
+    padding: 0; /* Elimina espaciado adicional */
+}
+
+/* Ajuste del último elemento */
+.tareas li:last-child {
+    margin-bottom: 10px; /* Espaciado extra para la última opción */
+}
+
+/* Estilo de los enlaces dentro de las listas */
+.tareas li a {
+    text-decoration: none;
+    color: #2c3e50; /* Color del texto */
+    background: #ecf0f1; /* Fondo claro */
+    padding: 12px 20px; /* Ajuste de tamaño para enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+    display: block; /* Enlace como bloque */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+    font-size: 1rem; /* Tamaño del texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Hover intuitivo */
+.tareas li a:hover {
+    background-color: #bdc3c7; /* Cambio de fondo al pasar el ratón */
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+/* Mostrar las tareas desplegables al activarlas */
+.tareas.mostrar {
+    display: block; /* Hace visible la lista desplegable */
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    main {
+        flex: none;
+        height: calc(100vh - 60px);
+    }
+}
+
